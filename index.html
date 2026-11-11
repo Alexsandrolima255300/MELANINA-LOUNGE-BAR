@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#211C19" />
+  <meta name="description" content="Melanina Lounge Bar — música ao vivo, samba, pagode, drinks e bons momentos em Uberaba." />
+  <title>Melanina Lounge Bar | Música, encontros e experiências</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Oswald:wght@500;600;700&family=Pacifico&display=swap" rel="stylesheet">
+  <style>
+    :root{--red:#C52819;--gold:#F7B600;--black:#211C19;--white:#fff;--beige:#E8CEB6;--muted:#b9aaa0;--line:rgba(255,255,255,.12)}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--black);color:var(--white);font-family:'DM Sans',sans-serif}a{color:inherit;text-decoration:none}button{font:inherit}
+    .topbar{height:5px;background:var(--gold)}header{position:absolute;z-index:5;top:5px;left:0;width:100%;padding:24px 6%;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{display:flex;align-items:center;gap:12px}.brand-mark{width:48px;height:48px;border:2px solid var(--gold);border-radius:50%;display:grid;place-items:center;color:var(--gold);font:28px 'Pacifico',cursive}.brand-name{font:26px 'Pacifico',cursive;color:var(--gold);line-height:1}.brand-sub{display:block;font:700 10px 'Oswald',sans-serif;letter-spacing:4px;color:#fff;text-align:center;margin-top:5px}.nav{display:flex;gap:30px;align-items:center;font-size:13px;font-weight:700}.nav a{transition:color .2s}.nav a:hover{color:var(--gold)}.nav .nav-cta{background:var(--gold);color:var(--black);padding:12px 18px;border-radius:3px}.menu-toggle{display:none;background:none;color:#fff;border:1px solid var(--line);padding:8px 12px}
+    .hero{min-height:760px;height:100svh;max-height:940px;position:relative;display:flex;align-items:center;overflow:hidden;background:linear-gradient(90deg,rgba(20,15,13,.94) 0%,rgba(20,15,13,.74) 46%,rgba(20,15,13,.24) 100%),linear-gradient(0deg,rgba(20,15,13,.7),transparent 50%),url('https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=2200&q=85') center/cover}.hero:after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 78% 48%,transparent 0 22%,rgba(0,0,0,.18) 65%);pointer-events:none}.hero-content{position:relative;z-index:1;width:min(700px,88%);margin:100px 0 0 9%}.eyebrow{color:var(--gold);font-size:11px;font-weight:800;letter-spacing:4px;text-transform:uppercase}.hero h1{font:clamp(58px,8vw,112px)/.95 'Oswald',sans-serif;text-transform:uppercase;margin:22px 0 20px;letter-spacing:-2px}.hero h1 em{font:clamp(48px,7vw,92px)/1 'Pacifico',cursive;color:var(--gold);text-transform:none;letter-spacing:-3px;display:block;margin:6px 0 0}.hero p{max-width:490px;color:#e9ded5;line-height:1.8;font-size:16px}.actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:34px}.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 23px;border:1px solid var(--gold);font-size:11px;letter-spacing:1.4px;text-transform:uppercase;font-weight:800;transition:.2s}.btn-gold{background:var(--gold);color:var(--black)}.btn-gold:hover{background:#ffd34d}.btn-outline:hover{background:var(--gold);color:var(--black)}.scroll-note{position:absolute;z-index:1;bottom:32px;left:9%;font-size:10px;letter-spacing:3px;color:#d5c8be;text-transform:uppercase}
+    .intro-strip{display:grid;grid-template-columns:repeat(3,1fr);background:var(--red);padding:24px 8%;gap:20px;text-align:center}.intro-strip strong{display:block;font:600 19px 'Oswald',sans-serif;letter-spacing:1px;text-transform:uppercase}.intro-strip span{font-size:11px;color:#ffe4dd;letter-spacing:1px}
+    section{padding:100px 8%}.section-head{display:flex;justify-content:space-between;align-items:end;gap:25px;margin-bottom:38px}.section-head h2{font:clamp(38px,5vw,64px)/1 'Oswald',sans-serif;text-transform:uppercase;margin:12px 0 0}.section-head p{max-width:390px;color:var(--muted);line-height:1.7;font-size:14px;margin:0}.section-kicker{font-size:10px;letter-spacing:4px;color:var(--red);font-weight:800;text-transform:uppercase}
+    .events{background:#f4e9df;color:var(--black)}.events .section-head p{color:#75675e}.event-feature{display:grid;grid-template-columns:1.15fr .85fr;min-height:390px;background:var(--black);color:white}.event-photo{min-height:340px;background:linear-gradient(0deg,rgba(0,0,0,.1),rgba(0,0,0,.1)),url('https://images.unsplash.com/photo-1501386761578-eac5c94b800a?auto=format&fit=crop&w=1200&q=85') center/cover}.event-info{padding:clamp(28px,5vw,58px);display:flex;flex-direction:column;justify-content:center}.event-info .section-kicker{color:var(--gold)}.event-info h3{font:clamp(32px,4vw,50px)/1.05 'Oswald',sans-serif;text-transform:uppercase;margin:16px 0}.event-info p{color:#c8bdb5;line-height:1.7;font-size:14px}.event-note{font-size:11px;color:var(--gold);margin:14px 0 24px}
+    .menu-section{background:var(--black)}.menu-section .section-head p{color:#b9aaa0}.menu-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.menu-card{background:#2d2622;border:1px solid rgba(255,255,255,.08);overflow:hidden}.menu-image{height:230px;background-position:center;background-size:cover}.menu-card:nth-child(1) .menu-image{background-image:url('https://images.unsplash.com/photo-1513558161293-cdaf765edfd4?auto=format&fit=crop&w=800&q=85')}.menu-card:nth-child(2) .menu-image{background-image:url('https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&w=800&q=85')}.menu-card:nth-child(3) .menu-image{background-image:url('https://images.unsplash.com/photo-1544145945-f90425340c7e?auto=format&fit=crop&w=800&q=85')}.menu-copy{padding:22px}.menu-copy h3{font:600 23px 'Oswald',sans-serif;text-transform:uppercase;margin:0 0 9px;color:var(--gold)}.menu-copy p{color:#c2b5ab;font-size:13px;line-height:1.7;margin:0}.menu-disclaimer{color:#a99b91;font-size:11px;margin-top:20px}
+    .about{background:var(--beige);color:var(--black);display:grid;grid-template-columns:1fr 1fr;gap:7%;align-items:center}.about-image{min-height:480px;background:url('https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=1200&q=85') center/cover}.about h2{font:clamp(42px,5vw,66px)/.98 'Oswald',sans-serif;text-transform:uppercase;margin:15px 0 24px}.about p{font-size:14px;line-height:1.9;color:#5d4e45}.about .section-kicker{color:var(--red)}.about-points{display:flex;flex-wrap:wrap;gap:10px;margin-top:25px}.about-points span{border:1px solid rgba(33,28,25,.25);padding:10px 13px;font-size:10px;font-weight:800;letter-spacing:1px;text-transform:uppercase}
+    .visit{background:#171311;display:grid;grid-template-columns:1fr 1fr;gap:7%;align-items:center}.visit h2{font:clamp(40px,5vw,62px)/1 'Oswald',sans-serif;text-transform:uppercase;margin:14px 0}.visit p{color:#c4b7ad;line-height:1.8;font-size:14px}.visit-card{border:1px solid var(--line);padding:28px}.visit-card strong{display:block;color:var(--gold);font:600 20px 'Oswald',sans-serif;text-transform:uppercase;margin-bottom:8px}.visit-card span{display:block;color:#c4b7ad;font-size:13px;line-height:1.7;margin-bottom:22px}
+    footer{background:#0e0c0b;padding:34px 8%;display:flex;justify-content:space-between;align-items:center;gap:20px;color:#9c8e84;font-size:11px}.footer-brand{font:22px 'Pacifico',cursive;color:var(--gold)}
+    @media(max-width:800px){header{padding:18px 5%}.nav{display:none;position:absolute;top:82px;left:5%;right:5%;padding:22px;background:#211c19;flex-direction:column;align-items:stretch;gap:20px;border:1px solid var(--line)}.nav.open{display:flex}.nav .nav-cta{text-align:center}.menu-toggle{display:block}.hero{min-height:700px;background-position:58% center}.hero-content{margin:100px 0 0 7%}.intro-strip{padding:22px 5%;grid-template-columns:1fr;gap:14px}.intro-strip strong{font-size:17px}.section-head{display:block}.section-head p{margin-top:18px}.events,.menu-section,.about,.visit{padding:76px 6%}.event-feature{grid-template-columns:1fr}.event-photo{min-height:260px}.menu-grid{grid-template-columns:1fr 1fr}.menu-image{height:180px}.about,.visit{grid-template-columns:1fr}.about-image{min-height:300px;order:2}.visit-card{margin-top:12px}footer{padding:28px 6%;flex-direction:column;text-align:center}}
+    @media(max-width:520px){.brand-mark{width:40px;height:40px;font-size:23px}.brand-name{font-size:22px}.brand-sub{font-size:8px;letter-spacing:3px}.hero h1{font-size:58px}.hero h1 em{font-size:52px}.hero p{font-size:14px}.hero-content{width:86%;margin-left:6%}.scroll-note{left:6%}.menu-grid{grid-template-columns:1fr}.menu-image{height:230px}.section-head h2{font-size:43px}.event-info{padding:30px 24px}.btn{width:100%}.actions{width:100%}}
+  </style>
+</head>
+<body>
+  <div class="topbar"></div>
+  <header>
+    <a class="brand" href="#inicio" aria-label="Melanina Lounge Bar - início">
+      <span class="brand-mark">M</span>
+      <span><span class="brand-name">Melanina</span><span class="brand-sub">LOUNGE BAR</span></span>
+    </a>
+    <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">MENU</button>
+    <nav class="nav" aria-label="Navegação principal">
+      <a href="#inicio">Início</a><a href="#eventos">Eventos e shows</a><a href="#cardapio">Cardápio</a><a href="#sobre">O Melanina</a><a href="#localizacao">Localização</a><a class="nav-cta" href="#eventos">Ver eventos</a>
+    </nav>
+  </header>
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-content">
+        <div class="eyebrow">Uberaba • Música • Encontros</div>
+        <h1>A noite tem<br><em>mais sabor</em></h1>
+        <p>Samba, pagode, música boa, drinks e momentos que merecem ser vividos. Seu ponto de encontro para curtir em Uberaba.</p>
+        <div class="actions"><a class="btn btn-gold" href="#eventos">Confira os próximos shows</a><a class="btn btn-outline" href="#cardapio">Conheça o cardápio</a></div>
+      </div>
+      <div class="scroll-note">Desça e descubra o Melanina &nbsp; ↓</div>
+    </section>
+    <div class="intro-strip">
+      <div><strong>Samba & pagode</strong><span>Som ao vivo e energia boa</span></div>
+      <div><strong>Drinks & porções</strong><span>Sabores para acompanhar a noite</span></div>
+      <div><strong>Seu lugar em Uberaba</strong><span>Encontros que viram histórias</span></div>
+    </div>
+    <section class="events" id="eventos">
+      <div class="section-head"><div><div class="section-kicker">Agenda do Melanina</div><h2>Eventos & shows</h2></div><p>Fique por dentro da programação, conheça as atrações e encontre o caminho para garantir seu ingresso.</p></div>
+      <div class="event-feature">
+        <div class="event-photo" role="img" aria-label="Público curtindo um show ao vivo"></div>
+        <div class="event-info"><div class="section-kicker">Vem aí no Melanina</div><h3>A próxima noite inesquecível começa aqui.</h3><p>Em breve, você encontra nesta página os detalhes dos próximos shows, atrações, datas, horários e informações sobre entrada.</p><div class="event-note">INGRESSOS: VENDA DIRECIONADA PARA A INGRESSE</div><a class="btn btn-gold" href="https://www.ingresse.com/" target="_blank" rel="noopener noreferrer">Acessar Ingresse</a></div>
+      </div>
+    </section>
+    <section class="menu-section" id="cardapio">
+      <div class="section-head"><div><div class="section-kicker">Para acompanhar sua noite</div><h2>Cardápio</h2></div><p>Drinks, bebidas e porções para deixar o encontro ainda melhor. Consulte as opções disponíveis no Melanina.</p></div>
+      <div class="menu-grid">
+        <article class="menu-card"><div class="menu-image" role="img" aria-label="Drink cítrico servido com gelo"></div><div class="menu-copy"><h3>Drinks</h3><p>Uma seleção de drinks para brindar e aproveitar cada momento.</p></div></article>
+        <article class="menu-card"><div class="menu-image" role="img" aria-label="Coquetel colorido em copo"></div><div class="menu-copy"><h3>Bebidas</h3><p>Cervejas, destilados e outras opções para todos os gostos.</p></div></article>
+        <article class="menu-card"><div class="menu-image" role="img" aria-label="Porção servida para compartilhar"></div><div class="menu-copy"><h3>Porções</h3><p>Boas opções para compartilhar com a galera.</p></div></article>
+      </div>
+      <div class="menu-disclaimer">As fotos desta primeira versão são ilustrativas. Fotos, nomes, descrições e preços oficiais serão inseridos na próxima etapa.</div>
+    </section>
+    <section class="about" id="sobre">
+      <div class="about-image" role="img" aria-label="Ambiente de bar aconchegante"></div>
+      <div><div class="section-kicker">Muito mais que um bar</div><h2>O encontro tem endereço.</h2><p>O Melanina Lounge Bar é um espaço descontraído em Uberaba para reunir amigos, curtir música ao vivo e aproveitar bons momentos. Nossa programação passeia pelo samba, pagode e sucessos que marcaram época, sempre acompanhados de drinks, bebidas e porções.</p><div class="about-points"><span>Música ao vivo</span><span>Ambiente descontraído</span><span>Acessibilidade</span><span>Estacionamento na rua</span></div></div>
+    </section>
+    <section class="visit" id="localizacao">
+      <div><div class="section-kicker">Esperamos por você</div><h2>Vamos combinar a próxima?</h2><p>Consulte a programação, escolha seu evento e venha viver a experiência Melanina. Estamos em Uberaba.</p></div>
+      <div class="visit-card"><strong>Melanina Lounge Bar</strong><span>Uberaba – Minas Gerais<br>Endereço completo e canais de contato serão adicionados assim que forem confirmados.</span><span>Entrada e banheiro acessíveis para cadeirantes. Estacionamento gratuito na rua.</span><a class="btn btn-outline" href="#eventos">Ver programação</a></div>
+    </section>
+  </main>
+  <footer><div class="footer-brand">Melanina Lounge Bar</div><div>© <span id="year"></span> Melanina Lounge Bar. Todos os direitos reservados.</div><div>Uberaba • MG</div></footer>
+  <script>
+    const toggle=document.querySelector('.menu-toggle');const nav=document.querySelector('.nav');
+    toggle.addEventListener('click',()=>{const open=nav.classList.toggle('open');toggle.setAttribute('aria-expanded',String(open));});
+    nav.querySelectorAll('a').forEach(link=>link.addEventListener('click',()=>{nav.classList.remove('open');toggle.setAttribute('aria-expanded','false');}));
+    document.getElementById('year').textContent=new Date().getFullYear();
+  </script>
+</body>
+</html>
